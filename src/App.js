@@ -23,7 +23,7 @@ function App() {
         <div className="socialm">
     <a href="https://www.facebook.com/saini.dheeraj.33" class="Socialfb "><i class="fa-brands fa-facebook-f"></i></a>
     <a href="https://www.linkedin.com/in/dheeraj-saini-6256902a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="Sociallinkedin "><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/dheerajsaini069?igsh=MW05YmgzazdrZXU3MA==" class="Socialinstagram "><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.instagram.com/_dheeraj._.saini_/" class="Socialinstagram "><i class="fa-brands fa-instagram"></i></a>
     <a href=" https://x.com/Dheerajsaini069?t=TwOL0GS-cDe_fiaAdpMCCA&s=08 " class="Socialtwitter "><i class="fa-brands fa-twitter"></i></a>
     </div>
       </div>
