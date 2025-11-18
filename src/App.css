@@ -234,16 +234,52 @@ h1 {
   width: 60%;
   height: 100%;
   float: left;
-  background: url("./images/city.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url("./images/city.jpg") no-repeat center center/cover;
   min-height: 500px;
   position: relative;
-  background-position-x: -30px;
+
+  /* Smooth edges + polish */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+  /* Slight zoom effect */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
+/* Soft dark gradient for readability */
+.city::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.5)
+  );
+  z-index: 1;
+}
+
+/* Optional floating animation */
+.city::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  
+}
+
+/* Hover Glow + Zoom */
+.city:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+
 
 .title {
   float: right;
