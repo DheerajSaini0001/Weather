@@ -97,7 +97,7 @@ function App() {
           </a>
         </div>
 
-        <p className="copyright">© {new Date().getFullYear()} Weather App</p>
+        <p className="copyright">© {new Date().getFullYear()} Weather </p>
       </footer>
     </div>
   );
